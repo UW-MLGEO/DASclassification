@@ -18,6 +18,10 @@ The OOI DAS dataset is around 26 TB of data as a whole which makes using it on g
 ## Metadata File
 The Metadata file for this project helps give bounds in time and space to ships identified for ML. Ships are displayed like in the example image and we find the bounds in which they plot in time and space. The borders of the features displayed are noted for both the distance and time then marked down in the metadata. A calculation is then undergone in the .csv which calculated where it lies in the channels based on the knowing the given channel length. (channel = ((distance / 2meters) * 1000 m/km)
 
+Example Image:  
+
+![xt of bandpass (6 0-80 0Hz)+fk(1450-9000) filtered data plot 30](https://github.com/user-attachments/assets/05f9d48e-e94e-4960-96a0-0365b305878d)
+
 Columns:
 Ship_# - Unique # given to each different ship  
 folder_name - name of folder  
