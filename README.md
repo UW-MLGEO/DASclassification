@@ -56,4 +56,15 @@ Alex Rose - Project Assistant
 - Assisted with compilation and formatting of metadata of where ships are located in the data to be utilized by ML and compiled sections of README.md file
 
 Anajani Mirchandani- Project Assistant
- 
+
+## Needed Imports
+If you have all packages installed then tbe .ipynb file should run das_package has functions inside made for this project
+
+```
+import das_package as dp
+import os
+import numpy as np
+from tqdm import tqdm
+import glob
+```
+
