@@ -5,7 +5,7 @@ Erfan Horeh
 Alex Rose
 Anajani Mirchandani
 
-## Goal
+## Project Goals
 In this project we plan to classify different signals in DAS data.
 
 ## Data:
@@ -16,7 +16,7 @@ Whidbey 2024
 The OOI DAS dataset is around 26 TB of data as a whole which makes using it on github challenging. Challenges have also been shown from large download sizes and download times.
 
 ## Metadata File
-The Metadata file for this project helps give bounds in time and space to ships identified for ML.
+The Metadata file for this project helps give bounds in time and space to ships identified for ML. Ships are displayed like in the example image and we find the bounds in which they plot in time and space. The borders of the features displayed are noted for both the distance and time then marked down in the metadata. A calculation is then undergone in the .csv which calculated where it lies in the channels based on the knowing the given channel length. (channel = ((distance / 2meters) * 1000 m/km)
 
 Columns:
 Ship_# - Unique # given to each different ship  
