@@ -1,0 +1,29 @@
+Ship_#,folder_name,Gauge_length,Interrogator,depth,Ship_type,Ship speed,Cable,Lon,Lat,~Start_distance,~End_distance,~Start_channel,~End_channel,~Start_Time,~End_Time,Notes:
+1,Optasense-442.63726,30,Optasense,-442.63726,General Cargo,126,North,-124.5477549,45.26005804,48,49.25,24000,24625,450,500,
+1,Silixa-364.38367,30,Silixa,-364.38367,General Cargo,132,South,-124.5900694,45.1491056,50.25,51.5,25125,25750,475,600,
+1,Optasense-364.38367,50,Optasense,-364.38367,General Cargo,132,South,-124.5900694,45.1491056,50.5,52.75,25250,26375,500,720,
+2,Optasense-250.5201,30,Optasense,-250.5201,Container Ship,125,North,-124.3412776,45.22012391,31.25,32.5,15625,16250,275,425,
+2,Silixa-258.96745,30,Silixa,-258.96745,Container Ship,121,South,-124.3386742,45.17119273,30.5,31.75,15250,15875,350,475,
+2,Optasense-258.96745,50,Optasense,-258.96745,Container Ship,121,South,-124.3386742,45.17119273,31,31.75,15500,15875,400,500,"Double check, very small so unsure if marked correctly"
+3,Silixa-375.24962,30,Silixa,-375.24962,Fishing Vessel Vessel,87,South,-124.6070394,45.15189208,51.75,52.5,25875,26250,375,500,
+3,Optasense-201.49551,50,Optasense,-201.49551,Fishing Vessel Vessel,79,North,-124.3106491,45.21573925,29.25,29.6,14625,14800,300,375,
+4,Optasense-495.41649,50,Optasense,-495.41649,Bulk Carrier,128,North,-124.637575,45.27945479,55.25,57,27625,28500,550,750,
+4,Optasense-540.8464,50,Optasense,-540.8464,Bulk Carrier,125,South,-124.6837162,45.17575529,58,60.5,29000,30250,450,600,
+5,Optasense-408.35052,50,Optasense,-408.35052,General Cargo,157,North,-124.4705822,45.24381106,41.75,43,20875,21500,280,450,
+5,Optasense-372.84845,50,Optasense,-372.84845,General Cargo,156,South,-124.4823674,45.15490071,42,43.25,21000,21625,500,650,
+6,Optasense-421.45381,50,Optasense,-421.45381,Bulk Carrier,115,North,-124.49787,45.24956211,43.5,45.5,21750,22750,275,375,
+8,Optasense-422.17024,50,Optasense,-422.17024,Bulk Carrier,108,North,-124.4998282,45.24997567,44,45.5,22000,22750,275,425,
+8,Optasense-334.81654,50,Optasense,-334.81654,Bulk Carrier,111,South,-124.5417195,45.14792105,46.5,48.5,23250,24250,375,550,
+8,Silixa-334.81654,30,Silixa,-334.81654,Bulk Carrier,111,South,-124.5417195,45.14792105,46.25,47.75,23125,23875,375,550,
+9,Optasense-409.21565,50,Optasense,-409.21565,Bulk Carrier,140,North,-124.4770978,45.2451854,42.25,43.5,21125,21750,325,450,
+9,Optasense-348.66731,50,Optasense,-348.66731,Bulk Carrier,141,South,-124.516049,45.15006294,44.75,46.5,22375,23250,300,450,
+10,Optasense-534.61143,50,Optasense,-534.61143,Trawler,86,North,-124.7321098,45.25333044,63.4,64.1,31700,32050,550,750,"Double check, very small so unsure if marked correctly"
+10,Optasense-604.19076,50,Optasense,-604.19076,Trawler,40,South,-124.7601666,45.19265756,65,65.5,32500,32750,750,1200,"Double check, very small so unsure if marked correctly"
+10,Silixa-604.19076,30,Silixa,-604.19076,Trawler,40,South,-124.7601666,45.19265756,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,"Double check, very small so unsure if marked correctly"
+11,Optasense-469.96243,50,Optasense,-469.96243,Trawler,34,North,-124.6010602,45.27126798,52,53.75,26000,26875,650,1200,
+14,Optasense-431.52527,30,Optasense,-431.52527,Trawler,107,North,-124.5246465,45.25519899,46.25,47.25,23125,23625,275,375,
+14,Optasense-422.18879,30,Optasense,-422.18879,Trawler,101,North,-124.5029091,45.25062461,44.5,45.6,22250,22800,325,375,
+14,Optasense-345.27842,50,Optasense,-345.27842,Trawler,105,South,-124.5704281,45.14797741,49.5,50.5,24750,25250,200,300,
+14,Silixa-345.27842,30,Silixa,-345.27842,Trawler,105,South,-124.5704281,45.14797741,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,"Double check, very small so unsure if marked correctly"
+14,Optasense-332.92511,50,Optasense,-332.92511,Trawler,102,South,-124.544958,45.14792728,47.5,48.5,23750,24250,300,375,
+14,Silixa-332.92511,30,Silixa,-332.92511,Trawler,102,South,-124.544958,45.14792728,46.8,47.6,23400,23800,350,450,
