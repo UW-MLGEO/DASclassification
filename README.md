@@ -12,6 +12,9 @@ In this project we plan to classify different signals in DAS data.
 OOI 2021
 Whidbey 2024
 
+## Challenges associated with DAS data
+The OOI DAS dataset is around 26 TB of data as a whole which makes using it on github challenging. Challenges have also been shown from large download sizes and download times.
+
 ## Metadata File
 The Metadata file for this project helps give bounds in time and space to ships identified for ML.
 
