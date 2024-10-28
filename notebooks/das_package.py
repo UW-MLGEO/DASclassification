@@ -2,11 +2,22 @@ import glob
 import os
 import wget
 import datetime
-from datetime import datetime, timedelta
+from datetime import datetime
 import h5py
 from nptdms import TdmsFile
 import dask.array as da
 import numpy as np
+import matplotlib.pyplot as plt
+
+
+
+
+plt.rc('font', size=20)          # controls default text sizes
+# plt.rc('axes', titlesize=10)     # fontsize of the axes title
+# plt.rc('axes', labelsize=10)    # fontsize of the x and y labels
+plt.rc('xtick', labelsize=20)    # fontsize of the tick labels
+plt.rc('ytick', labelsize=20)    # fontsize of the tick labels
+# plt.rc('figure', titlesize=10)  # fontsize of the figure title
 
 
 
@@ -388,3 +399,40 @@ def strain2strainrate(data, dt, tint):
     str_rate = str_rate/(dt*tint/1000)
 
     return str_rate
+
+
+
+
+def plot_tx(trace, time, dist, file_begin_time_utc=0, fig_size=(12, 10), v_min=None, v_max=None):
+    """
+    Spatio-temporal representation (t-x plot) of the strain data
+
+    Inputs:
+    :param trace: a [channel x time sample] nparray containing the strain data in the spatio-temporal domain
+    :param time: the corresponding time vector
+    :param dist: the corresponding distance along the FO cable vector
+    :param file_begin_time_utc: the time stamp of the represented file
+    :param fig_size: Tuple of the figure dimensions. Default fig_size=(12, 10)
+    :param v_min: sets the min nano strain amplitudes of the colorbar. Default v_min=0
+    :param v_max: sets the max nano strain amplitudes of the colorbar, Default v_max=0.2
+
+    Outputs:
+    :return: a tx plot
+
+    """
+
+    fig = plt.figure(figsize=fig_size)
+    # determine if the envelope should be implemented here rather than just abs
+    # Replace abs(trace) per abs(sp.hilbert(trace, axis=1)) ? 
+    shw = plt.imshow(abs(trace.T) * 10 ** 9, extent=[dist[0] * 1e-3, dist[-1] * 1e-3, time[0], time[-1]], aspect='auto',
+                     origin='lower', cmap='jet', vmin=v_min, vmax=v_max)
+    plt.xlabel('Distance (km)')
+    plt.ylabel('Time (s)')
+    plt.tick_params(axis='both', which='major', pad=15)
+    bar = fig.colorbar(shw, aspect=30, pad=0.015)
+    bar.set_label('Strain Rate Envelope (x$10^{-9}$)')
+
+    # if isinstance(file_begin_time_utc, datetime):
+    #     plt.title(file_begin_time_utc.strftime("%Y-%m-%d %H:%M:%S"), loc='right')
+    plt.tight_layout()
+    # plt.show()
