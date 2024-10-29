@@ -17,6 +17,9 @@ How we will complete this project:
 OOI 2021
 Whidbey 2024
 
+## Lack of EDA:
+For the DAS data the mean, max, min, and variance are not helpful for the overall data. However, using different variables from the data: the spectrum, our plotted spectrogram, and the signal to noise ratio are much more beneficial as they help up observe more of the key trends occuring in the data due to the high dimensionality presented in the DAS data.
+
 ## Challenges associated with DAS data
 The OOI DAS dataset is around 26 TB of data as a whole which makes using it on github challenging. Challenges have also been shown from large download sizes and download times.
 
