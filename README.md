@@ -68,10 +68,12 @@ Anajani Mirchandani- Project Assistant
 If you have all packages installed then tbe .ipynb file should run das_package has functions inside made for this project
 
 ```
-import das_package as dp
 import os
 import numpy as np
 from tqdm import tqdm
 import glob
+from skimage.measure import block_reduce
+import matplotlib.pyplot as plt
+import scipy.signal as sp
 ```
 
