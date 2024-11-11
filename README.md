@@ -1,9 +1,9 @@
 # DASclassification
 
-## Members
-Erfan Horeh
-Alex Rose
-Anajani Mirchandani
+## Members and Contact Info (email, GitHub username)
+Erfan Horeh <br>
+Alex Rose - arose17@uw.edu, arose1234 <br>
+Anjani Mirchandani 
 
 ## Project Goals
 In this project we plan to classify different signals in DAS data using machine learning.
@@ -12,27 +12,43 @@ How we will complete this project:
 1. Make DAS data AI-ready for use with different ML methods
 2. Propose methods for ship noise DAS data to be used my ML
 
+### How our notebooks are organized:  
+Due to the large nature of DAS data it was very difficult to separate the notebooks into different files for the steps undergone since we are dealing with extremely big data. We have 1 notebook which includes our steps in order to be able to analyze the data since we are unable to save our data directly to GitHub.
+
+## Installation:
+
+### Needed Imports
+If you have all packages installed then tbe .ipynb file should run das_package has functions inside made for this project
+
+```
+import os
+import numpy as np
+from tqdm import tqdm
+import glob
+from skimage.measure import block_reduce
+import matplotlib.pyplot as plt
+import scipy.signal as sp
+```
+
 ## Data:
-OOI 2021,Whidbey 2024
+Ocean Observatories Initiative RAPID community test from 2021
 
 The OOI 2021 data comes specifically as .h5 files which contain numerous numbered variables such as time and distance along cable and Whidbey 2024 data has not been recieved yet.  
 Strain rate data is calculated later on in the notebook.
 
-### How our notebooks are organized:  
-Due to the large nature of DAS data it was very difficult to separate the notebooks into different files for the steps undergone since we are dealing with extremely big data. We have 1 notebook which includes our steps in order to be able to analyze the data since we are unable to save our data directly to GitHub.
-
-## EDA notes:
-For the DAS data the mean, max, min, and variance are not helpful for the overall data. However, using different variables from the data: the spectrum, our plotted spectrogram, and the signal to noise ratio are much more beneficial as they help up observe more of the key trends occuring in the data due to the high dimensionality presented in the DAS data.
-
-## Challenges associated with DAS data
-The OOI DAS dataset is around 26 TB of data as a whole which makes using it on github challenging. Challenges have also been shown from large download sizes and download times. The dimensionality of the dataset is also very large so specific code blocks take lots of time to run.
-
-## Metadata File:
-The Metadata file for this project helps give bounds in time and space to ships identified for ML. Ships are displayed like in the example image and we find the bounds in which they plot in time and space. The borders of the features displayed are noted for both the distance and time then marked down in the metadata. A calculation is then undergone in the .csv which calculated where it lies in the channels based on the knowing the given channel length. (channel = ((distance / 2meters) * 1000 m/km)
+### Citation:
+Wilcock, W., & Ocean Observatories Initiative. (2023). Rapid: A Community Test of Distributed Acoustic Sensing on the Ocean Observatories <br> 
+Initiative Regional Cabled Array [Data set]. Ocean Observatories Initiative. https://doi.org/10.58046/5J60-FJ89
 
 Example Image:  
 
 ![xt of bandpass (6 0-80 0Hz)+fk(1450-9000) filtered data plot 30](https://github.com/user-attachments/assets/05f9d48e-e94e-4960-96a0-0365b305878d)
+
+### Exploratory Data Analysis(EDA) notes:
+For the DAS data the mean, max, min, and variance are not helpful for the overall data. However, using different variables from the data: the spectrum, our plotted spectrogram, and the signal to noise ratio are much more beneficial as they help up observe more of the key trends occuring in the data due to the high dimensionality presented in the DAS data.
+
+## Metadata File:
+The Metadata file for this project helps give bounds in time and space to ships identified for ML. Ships are displayed like in the example image and we find the bounds in which they plot in time and space. The borders of the features displayed are noted for both the distance and time then marked down in the metadata. A calculation is then undergone in the .csv which calculated where it lies in the channels based on the knowing the given channel length. (channel = ((distance / 2meters) * 1000 m/km)
 
 ### How the metadata file is organized:
 Each column has a specific attribute it is displaying. The rows in the metadata correspond to each instance of identifiable ships crossing over either a section of the North or South OOI cable monitored in our data. The columns below explain what each attribute is and how it contributes to our study.
@@ -56,24 +72,14 @@ Lat	- Latitude (degress)
 ~End_Time -	(last time ship is seen), Top side of the plot  
 Notes - Notes  
 
+## Challenges associated with DAS data
+The OOI DAS dataset is around 26 TB of data as a whole which makes using it on github challenging. Challenges have also been shown from large download sizes and download times. The dimensionality of the dataset is also very large so specific code blocks take lots of time to run.
+
 ## Contributions:
 Erfan Horeh - Project Lead  
 
 Alex Rose - Project Assistant  
 - Assisted with compilation and formatting of metadata of where ships are located in the data to be utilized by ML and compiled sections of README.md file
 
-Anajani Mirchandani- Project Assistant
-
-## Needed Imports
-If you have all packages installed then tbe .ipynb file should run das_package has functions inside made for this project
-
-```
-import os
-import numpy as np
-from tqdm import tqdm
-import glob
-from skimage.measure import block_reduce
-import matplotlib.pyplot as plt
-import scipy.signal as sp
-```
+Anjani Mirchandani- Project Assistant
 
