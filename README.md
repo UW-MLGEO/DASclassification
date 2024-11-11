@@ -68,8 +68,11 @@ Lat	- Latitude (degress)
 ~End_distance - (furthest distance along cable from Pacific City, OR [km] where ship is seen) , Right side of the plot 
 ~Start_channel - (closest channel along cabe from Pacific City, OR [km] where ship is seen, converted from distance), attribute used for key variables in the data  
 ~End_channel - (furthest channel along cabe from Pacific City, OR [km] where ship is seen, converted from distance), attribute used for key variables in the data   
-~Start_Time - (First time ship is seen), Bottom side of the plot  
-~End_Time -	(last time ship is seen), Top side of the plot  
+~Start_Date_Time_Plot - time indicated in top right of plot for start time whihc is = 0.
+~Start_Time_from_plot - (First time ship is seen from start of plot), Bottom side of the plot  
+~End_Time_from_plot -	(last time ship is seen from start of plot), Top side of the plot  
+~Start_datetime_ship - actual start time in MM/D/YYYY HH:MM:SS
+~end_datetime_ship - actual end time in MM/D/YYYY HH:MM:SS
 Notes - Notes  
 
 ## Challenges associated with DAS data
