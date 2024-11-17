@@ -82,7 +82,8 @@ The OOI DAS dataset is around 26 TB of data as a whole which makes using it on g
 Erfan Horeh - Project Lead  
 
 Alex Rose - Project Assistant  
-- Assisted with compilation and formatting of metadata of where ships are located in the data to be utilized by ML and compiled sections of README.md file
+- Assisted with compilation and formatting of metadata of where ships are located in the data to be utilized by ML and compiled sections of README.md file.
+- Compiled Research Relevance file and utilized AutoML to find suitable models.
 
 Anjani Mirchandani- Project Assistant
 
