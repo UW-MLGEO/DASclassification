@@ -3,4 +3,4 @@ Distributed Acoustic Sensing (DAS) is the utilization of fiber-optic cable to ob
 
 Our study will do this by using a supervised learning approach where the model will be trained based on two seperate classes. Class 1 will be the time/distance points where there is a ship signature and is present in the data. Class 0 will be the time/distance points which is random noise data picked up from the strain of the fiber optic cable. Metadata files have been used to note where ships currently are in the data to allow for us to train the dataset.
 
-Expected outcomes from this study include being able to classify ship noise from the 2021 OOI DAS Dataset. Potential impacts include allowing time for other analyses of data while algorithms focus on the ship noise reducing human time dedicated.
+Expected outcomes from this study include being able to classify ship noise using various Machine Learning or Deep Learning methods on the 2021 OOI DAS Dataset. Potential impacts include allowing time for other analyses of data while algorithms focus on the ship noise reducing human time dedicated.
