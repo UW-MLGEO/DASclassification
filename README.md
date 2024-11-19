@@ -13,7 +13,10 @@ How we will complete this project:
 2. Propose methods for ship noise DAS data to be used my ML
 
 ### How our notebooks are organized:  
-Due to the large nature of DAS data it was very difficult to separate the notebooks into different files for the steps undergone since we are dealing with extremely big data. We have 1 notebook which includes our steps in order to be able to analyze the data since we are unable to save our data directly to GitHub.
+Due to the large nature of DAS data it was very difficult to separate the notebooks into different files for the steps undergone since we are dealing with extremely big data. We have 1 notebook which includes our steps in order to be able to analyze the data since we are unable to save our data directly to GitHub. 
+
+#### Post CML Deadline Notes:
+Code is now split between two different files due to the clustering_analysis.ipynb file implementing logistic regression over a larger size of the dataset. Data_Manipulation_new.ipynb contains the AutoML Implementation and Hyperparameter Tuning, Training Engineering and Model Assessment, and Computational Time Analysis sections.
 
 ## Installation:
 
