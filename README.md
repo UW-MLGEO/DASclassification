@@ -1,9 +1,8 @@
 # DASclassification
 
 ## Members and Contact Info (email, GitHub username)
-Erfan Horeh <br>
+Erfan Horeh - erfanbh@uw.edu, erfanbh <br>
 Alex Rose - arose17@uw.edu, arose1234 <br>
-Anjani Mirchandani 
 
 ## Project Goals
 In this project we plan to classify different signals in DAS data using machine learning.
@@ -11,28 +10,28 @@ In this project we plan to classify different signals in DAS data using machine 
 How we will complete this project:
 1. Make DAS data AI-ready for use with different ML methods
 2. Propose methods for ship noise DAS data to be used my ML
+3. Apply CML and DL models to DAS data in early attempt to classify ship noise
 
 ### How our notebooks are organized:  
-Due to the large nature of DAS data it was very difficult to separate the notebooks into different files for the steps undergone since we are dealing with extremely big data. We have 1 notebook which includes our steps in order to be able to analyze the data since we are unable to save our data directly to GitHub. 
+Due to the large nature of DAS data it was very difficult to separate the notebooks into different files for the steps undergone since we are dealing with extremely big data. We have 3 notebooks which includes our steps in order to be able to analyze the data since we are unable to save our data directly to GitHub. Data_manipulation_new is the notebook for our beginning data manipulation to prepare our AI-ready dataset for analysis. ClassicMachineLearning_notebook includes our data manipulation + CML methods applied to our DAS data. DeepLearning_Notebook includes our deep learning models applied to our beginning notebook on data manipulation. Das_package.py is the script associated with functions used in all notebooks that is required. An additional notebook Testing_DL utilizes our DL infrastructure and tests it to a figure to see if ship signals are present.
 
 #### Post CML Deadline Notes:
 Code is now split between two different files due to the clustering_analysis.ipynb file implementing logistic regression over a larger size of the dataset. Data_Manipulation_new.ipynb contains the AutoML Implementation and Hyperparameter Tuning, Training Engineering and Model Assessment, and Computational Time Analysis sections.
 
 ## Installation:
 
-### Needed Imports
-If you have all packages installed then tbe .ipynb file should run das_package has functions inside made for this project
+### Environment File
+Using provided environment file you can easily install all needed directories from a frozen environment.txt file  
 
+To install: Create and activate own conda env using:
 ```
-import os
-import numpy as np
-from tqdm import tqdm
-import glob
-from skimage.measure import block_reduce
-import matplotlib.pyplot as plt
-import scipy.signal as sp
+conda create --name DASclassification python=3.11.10
+conda activate DASclassification
 ```
-
+Then use frozen environment.txt file: "Path/environment.txt" will be to be replaced with own filepath
+```
+pip install -r path/environment.txt
+```
 ## Data:
 Ocean Observatories Initiative RAPID community test from 2021
 
@@ -83,10 +82,17 @@ The OOI DAS dataset is around 26 TB of data as a whole which makes using it on g
 
 ## Contributions:
 Erfan Horeh - Project Lead  
+- Curation of AI-ready dataset
+- Assitance with CML models
+- Creation of DL models for utilization in course
+- Presentation organization and creation
+- Report organization and writing
 
 Alex Rose - Project Assistant  
 - Assisted with compilation and formatting of metadata of where ships are located in the data to be utilized by ML and compiled sections of README.md file.
 - Compiled Research Relevance file and utilized AutoML to find suitable models.
+- Assistance w/ DL models
+- Assitance with presentation and figures
+- Report writing
 
-Anjani Mirchandani- Project Assistant
 
